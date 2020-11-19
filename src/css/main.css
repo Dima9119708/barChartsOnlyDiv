@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  padding: 30px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  border: 2px solid rgba(77, 77, 77, 0.5);
+  border-radius: 10px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.charts-y {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.charts-y_item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  min-width: 50px;
+  font-size: 20px;
+}
+
+.charts-y_item::before {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 0;
+  height: 2px;
+  width: 11px;
+  background-color: rgb(14, 14, 14);
+}
+
+.charts {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 38px;
+  padding-bottom: 10px;
+  border-left: 2px solid rgba(33, 33, 173, 0.7);
+  border-bottom: 2px solid rgba(33, 33, 173, 0.7);
+}
+
+.charts-column {
+  position: relative;
+  width: 50px;
+  outline: 1px solid rgb(6, 88, 151);
+}
+
+.charts-column-number {
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+  width: 50px;
+  font-size: 20px;
+}
+
+.charts-column-number::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -11px;
+  height: 11px;
+  width: 2px;
+  background-color: rgb(14, 14, 14);
+}
